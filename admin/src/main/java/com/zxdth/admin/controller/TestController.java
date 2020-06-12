@@ -18,4 +18,9 @@ public class TestController {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return df.format( CommonMethod.getTime());
     }
+
+    @GetMapping("/hello")
+    public String getHello() {
+        return "Hello World";
+    }
 }
